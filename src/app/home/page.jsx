@@ -22,7 +22,7 @@ export default function Home(){
            ['6','Dinner' , faUtensils , '/dinner'],
          ].map(([key,category,icon,link]) =>(
 
-          <Link kry={key} href={link} className="h-[20vh] w-[40vw] grid grid-cols-1 grid-rows-2 place-items-center rounded-2xl bg-slate-800 hover:bg-slate-700">
+          <Link key={key} href={link} className="h-[20vh] w-[40vw] grid grid-cols-1 grid-rows-2 place-items-center rounded-2xl bg-slate-800 hover:bg-slate-700">
           <div className="h-3/5 w-3/2 flex justify-center items-center">
            <FontAwesomeIcon icon={icon}
            className="h-full w-full text-white text-4xl"/>

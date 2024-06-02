@@ -13,7 +13,7 @@ export default function Indexpg(){
          </div>
  
           <Image className="bg-cover" height={300} width={300}
-          src="./index.png" alt="Index image"></Image>
+          src="/index.png" alt="Index image"></Image>
 
           <Link href="./home" 
            className="h-[8vh] w-2/3 bg-red-600 flex justify-center items-center text-white text-2xl font-bold rounded-2xl">

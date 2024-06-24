@@ -7,12 +7,12 @@ export default function Footer(){
     return(
     <>
       <footer className="h-[15vh] w-screen flex justify-evenly items-center bg-black">
-          <Link href="./home" className="h-full w-full grid grid-cols-1 grid-rows-2 place-items-center gap-2 bg-black hover:bg-slate-950 group">
+          <Link href="../home" className="h-full w-full grid grid-cols-1 grid-rows-2 place-items-center gap-2 bg-black hover:bg-slate-950 group">
             <FontAwesomeIcon icon={faHouse} className="h-6 w-6 text-white  group-hover:text-red-600" />
             <p className="text-white hover:text-red-600 text-xl font-semibold group-hover:text-red-600">Home</p>
           </Link>
 
-          <Link href="./myorder" className="h-full w-full grid grid-cols-1 grid-rows-2 place-items-center gap-2 bg-black hover:bg-slate-950 group">
+          <Link href="../myorder" className="h-full w-full grid grid-cols-1 grid-rows-2 place-items-center gap-2 bg-black hover:bg-slate-950 group">
             <FontAwesomeIcon icon={faList} className="h-6 w-6 text-white  group-hover:text-red-600" />
             <p className="text-white hover:text-red-600 text-xl font-semibold group-hover:text-red-600">My order</p>
           </Link>

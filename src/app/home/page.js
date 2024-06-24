@@ -3,8 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBottleWater , faMugHot , faPizzaSlice , faPlateWheat , faBowlFood , faUtensils } from '@fortawesome/free-solid-svg-icons';
-import Navbar from "../navbar/page";
-import Footer from "../footer/page";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function Home(){
     return(
@@ -14,12 +14,12 @@ export default function Home(){
         <section className="h-[70vh] w-screen flex justify-center items-center flex-wrap gap-4 p-4 bg-slate-950">
         
          {[
-           ['1','Drinks' , faBottleWater , './drinks'],
-           ['2','Beverages' , faMugHot , '/beverages'],
-           ['3','Quickbites' , faPizzaSlice , '/quickbites'],
-           ['4','Breakfast' , faPlateWheat , '/breakfast'],
-           ['5','Lunch' , faBowlFood , '/lunch'],
-           ['6','Dinner' , faUtensils , '/dinner'],
+           ['1','Drinks' , faBottleWater , './home/drinks'],
+           ['2','Beverages' , faMugHot , './home/beverages'],
+           ['3','Quickbites' , faPizzaSlice , './home/quickbites'],
+           ['4','Breakfast' , faPlateWheat , './home/breakfast'],
+           ['5','Lunch' , faBowlFood , './home/lunch'],
+           ['6','Dinner' , faUtensils , './home/dinner'],
          ].map(([key,category,icon,link]) =>(
 
           <Link key={key} href={link} className="h-[20vh] w-[40vw] grid grid-cols-1 grid-rows-2 place-items-center rounded-2xl bg-slate-800 hover:bg-slate-700 group">
